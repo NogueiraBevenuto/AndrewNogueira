@@ -1,0 +1,222 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'android'; src: url(../fontes/idroid.otf) format(opentype);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+rgb(123, 253, 123);
+rgb(3, 196, 3);
+rgb(1, 83, 1);
+*/
+:root {
+    --cor0: #86F74A;
+    --cor1: #57F500;
+    --cor2: #44C200;
+    --cor3: #2B7009;
+    --cor4: #42702B;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    --fonte-android: 'android', 'cursive';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body { 
+    font-family: var(--fonte-padrão);
+    margin: 0px;
+    background-color: var(--cor0);
+}
+
+
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    min-height: 150px;
+    padding-top: 40px;
+    box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.575);
+
+}
+
+header > h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: var(--fonte-padrão);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.219);
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrão);
+    font-size: 1.2em;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+    margin-bottom: 10px;
+    padding: 20px;   
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h1{
+
+        font-family: var(--fonte-android);
+        color: var(--cor4);
+        font-weight: bold;
+        
+ 
+}
+
+main h2{
+    
+    font-family: var(--fonte-android);
+    color: var(--cor3);
+    font-size: 1.4em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 6px;
+  
+}
+nav {
+    
+    margin: 0px;
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.103);
+}
+article > h1 {
+    text-align: left;
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 5px;
+    padding: 10px;
+    transition-duration: 0.5s;
+
+}
+
+nav > a:hover {
+    color: var(--cor3);
+    background-color: var(--cor2);
+    margin: 3px;
+
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main strong{
+    color: var(--cor3);
+    font-weight: bold;
+    
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor3);
+    background-color: var(--cor2);
+}
+main a:hover{
+    color: var(--cor1);
+    text-decoration: underline;
+}
+
+aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
+
+}
+
+aside > ul {
+    list-style-type: '\2611\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+aside > h3 {
+    background-color: var(--cor3);
+    color: white;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    margin: -10px -10px 0px -10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.479);
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: var(--cor4);
+    font-size: 0.9em;
+    padding: 5px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover{
+    color: var(--cor1);
+    text-decoration: underline;
+    transition-duration: 0.3s;
+    border-radius: 3px;
+
+}
+
+img {
+    width: 100%;
+}
+
+.pequeno {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div#video {
+    background-color: var(--cor3);
+    align-items: center;
+    margin: 0px -20px 30px -20px;
+    padding: 15px;
+    padding-bottom: 57.5%;
+    position: relative;
+}
+
+div#video > iframe {
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
